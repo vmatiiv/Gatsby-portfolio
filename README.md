@@ -3,7 +3,7 @@
 ## A clean, beautiful and responsive portfolio template for Developers
 
 <h2 align="center">
-  <img src="https://github.com/vmatiiv/gatsby-portfolio/blob/master/examples/example.gif" alt="Gatsby Portfolio" width="600px" />
+  <img src="https://github.com/vmatiiv/gatsby-portfolio/blob/main/examples/example.gif" alt="Gatsby Portfolio" width="600px" />
   <br>
 </h2>
 
@@ -64,7 +64,7 @@ $ yarn develop
 Once your server has started, go to `http://localhost:8000/` and you will see the website running on a Development Server:
 
 <h2 align="center">
-  <img src="https://github.com/vmatiiv/gatsby-portfolio/blob/master/examples/example.jpg" alt="Gatsby Portfolio" width="100%">
+  <img src="https://github.com/vmatiiv/gatsby-portfolio/blob/main/examples/example.jpg" alt="Gatsby Portfolio" width="100%">
 </h2>
 
 ---

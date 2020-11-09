@@ -1,0 +1,5 @@
+.footer{
+    padding: 2rem 0;
+    @include sectionColor($dark-section-color);
+    border-top: 1px solid invert($dark-section-color);
+}

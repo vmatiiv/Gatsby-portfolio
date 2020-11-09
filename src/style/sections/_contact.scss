@@ -1,0 +1,46 @@
+.contact{
+    position: relative;
+    @include sectionColor($dark-section-color);
+    &__social{
+        display:flex;
+        flex-direction: row;
+        & a{
+            color: invert($color: $dark-section-color);
+            padding-right: 1rem;
+        }
+        & svg{
+            width:2rem;
+            height:2rem;
+        }
+    }
+}
+.form_inputWrap{
+    display:flex;
+    flex-direction: column;
+}
+.contact-form{
+    justify-content: center;
+}
+.form_input{
+    margin-bottom: 1rem;
+    border:1px solid;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    color: invert($color: $dark-section-color);
+    background-color: transparent;
+}
+.form_inputButton{
+    width:100%;
+    margin: 1rem 0;
+    margin-bottom:6rem;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    background-color: transparent;
+
+    color: invert($color: $dark-section-color);
+    &:hover{
+        color: invert($color: $light-section-color);
+        background-color: invert($color: $dark-section-color);;
+
+    }
+}

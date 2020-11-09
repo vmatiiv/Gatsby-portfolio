@@ -1,0 +1,29 @@
+@import './variable';
+@import './mixins';
+@import './sections/about';
+@import './sections/header';
+@import './sections//projects';
+@import './sections/nav';
+@import './sections/technologies';
+@import './sections/footer';
+@import './sections/contact';
+
+body{
+    overflow-x: hidden;
+}
+.title{
+    padding:1rem 0 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+section{
+    padding:5rem 0;
+}
+.icon{
+    color:invert($color: $dark-section-color);
+    &:hover{
+        color:inherit;
+
+    }
+}

@@ -1,0 +1,25 @@
+.header{
+    @include fullScreen;
+    @include centered;
+    color:$light-section-color;
+    position:relative;
+
+    &_baner{
+        position: absolute !important;
+        @include fullScreen;
+    }
+    &_overlay{
+        @include fullScreen;
+        position:absolute;
+        background-color: rgba($color: #000000, $alpha: .5);
+        top:0;
+        left:0;
+        z-index:2;
+    }
+    &_text{
+        z-index:3;
+    }
+    &_text__modified{
+        color:$name-color;
+    }
+}

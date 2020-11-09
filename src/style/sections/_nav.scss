@@ -1,0 +1,119 @@
+
+@mixin nav{
+    position:relative;
+    width:100vw;
+    @include sectionColor($grey-section-color);
+    border-bottom: 1px solid $nav-border-color;
+}
+
+.nav{
+    &__links{
+        flex-grow: 1;
+        flex-basis:100%;
+        transform: scaleY(0);
+        height:0;
+        width:100%;
+        transform-origin:top;
+        flex-direction: column ; 
+        transition: .3s ease-in-out;
+
+        &.show{
+            transform: scaleY(1);
+            height:auto;
+
+        }
+    }
+    &__ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column; 
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    &__button{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        display: block;
+    }
+    
+    &__logo{
+        color: invert($color: $light-section-color);
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 600;
+        &:hover{
+            color: invert($color: $light-section-color);
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    &__item{
+        position: relative;
+        top: 1px;
+        color: #777;
+        font-style: italic;
+        border-bottom: 1px solid transparent;
+        padding: 1rem 0.5rem;
+        text-transform: capitalize;
+        display: block;
+        &:hover{
+            text-decoration: none;
+            border-bottom: 1px solid black;
+            color: black;
+            cursor: pointer;
+        }
+        &--active{
+            color:black;
+            border-bottom: 1px solid black;        
+        }
+    }
+    &__contant{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+        flex-wrap: wrap;
+    }
+}
+
+.fixed{
+    @include nav;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:3;
+}
+.relative{
+   @include nav;
+}
+
+
+@include media(tablet) {
+    .nav{
+        &__ul{
+            margin-left: auto !important;
+            list-style: none;
+            flex-direction: row;
+            display: flex;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        &__button{
+            display: none;
+        }
+        &__links{
+            flex-basis: auto;
+            height: auto;
+            transform:scale(1);
+            width:auto;
+            display: flex;
+            flex-grow: 1;
+        }
+        &__contant{
+            padding: 0;
+        }
+    }
+}

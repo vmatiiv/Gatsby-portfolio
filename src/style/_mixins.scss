@@ -1,0 +1,35 @@
+@mixin centered{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin fullScreen{
+    width:100vw;
+    height:100vh;
+}
+@mixin sectionColor($color) {
+    color:invert($color: $color);
+    background-color: $color;
+}
+@mixin media($breakpoint){
+    @if $breakpoint == land {
+        @media (min-width: 576px){
+            @content;
+        }
+    }
+    @if $breakpoint == tablet {
+        @media (min-width: 768px){
+            @content;
+        }
+    }
+    @if $breakpoint == desktop {
+        @media (min-width: 992px){
+            @content;
+        }
+    }
+    @if $breakpoint == large-desktop {
+        @media (min-width: 1200px){
+            @content;
+        }
+    }
+}

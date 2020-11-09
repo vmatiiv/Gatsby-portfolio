@@ -1,0 +1,17 @@
+.technologies{
+    @include sectionColor($dark-section-color);    
+    width:100vw;
+    & svg{
+        width:10rem;
+        height:10rem;
+    }
+    &__figure{
+        text-align: center;
+    }
+}
+// .icon{
+//     color:invert($color: $dark-section-color);
+// }
+// .icon:hover{
+//     color:inherit;
+// }

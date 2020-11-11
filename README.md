@@ -115,6 +115,8 @@ export const projects = [
 
 **_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
 
+**_Important_Note_**: If you want to save resume on site, you can put it in `src/downloads/` and than import inside `data.jsx` 
+
 ```javascript
 export const about = {
   img: 'face.jpg', // put your profile image 
@@ -123,7 +125,7 @@ export const about = {
     'p2',
     'p3'
     ] //Each element inside the array will create a paragraph
-  resume: 'http://localhost:8000', // if no resume, the button will not show up
+  resume: 'http://localhost:8000', //url to your Resume or imported Resume from 'src/downloads/'
 };
 ```
 

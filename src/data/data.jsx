@@ -4,7 +4,8 @@ import {FaGithub,FaFacebook,FaInstagram,FaTwitter,FaLinkedin,FaReact,FaSass,FaHt
 import {GrGatsbyjs, GrGraphQl} from 'react-icons/gr'
 import {SiRedux, SiTypescript, SiWebpack} from 'react-icons/si'
 import { nanoid } from 'nanoid';
-
+import downloadResume from '../downloads/Resume.pdf'
+//TO DO CV page, update README, updaate ABOUT component
 export const technologies = [
     {
         id:nanoid(),
@@ -101,7 +102,7 @@ export const about = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque at repudiandae minima magni laudantium omnis aliquam! Quis dolorem illum placeat impedit laudantium accusantium tenetur itaque. Nesciunt voluptates quod autem.',
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque at repudiandae minima magni laudantium omnis aliquam! Quis dolorem illum placeat impedit laudantium accusantium tenetur itaque. Nesciunt voluptates quod autem.',
     ],
-    resume:"http://localhost:8000" //url to your CV
+    resume:downloadResume 
 }
 
 export const contacts = {
